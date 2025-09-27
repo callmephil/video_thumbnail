@@ -101,11 +101,7 @@ public class VideoThumbnailPlugin implements FlutterPlugin, MethodCallHandler {
             case 1:
                 return Bitmap.CompressFormat.PNG;
             case 2:
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                    return Bitmap.CompressFormat.WEBP_LOSSY;
-                } else {
-                    return Bitmap.CompressFormat.WEBP;
-                }
+                return Bitmap.CompressFormat.WEBP_LOSSY;
         }
     }
 
