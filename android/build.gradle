@@ -40,7 +40,3 @@ android {
         disable 'InvalidPackage'
     }
 }
-
-tasks.withType(JavaCompile) {
-    options.compilerArgs += ["-Xlint:deprecation", "-Xlint:unchecked"]
-}   
