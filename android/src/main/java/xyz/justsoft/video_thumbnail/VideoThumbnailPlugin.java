@@ -242,7 +242,7 @@ public class VideoThumbnailPlugin implements FlutterPlugin, MethodCallHandler {
             } else {
                 bitmap = retriever.getFrameAtTime(timeMs * 1000L, MediaMetadataRetriever.OPTION_CLOSEST_SYNC);
             }
-        } catch (IllegalArgumentException | RuntimeException | IOException ex) {
+        } catch (RuntimeException | IOException ex) {
             ex.printStackTrace();
         } finally {
             try {
